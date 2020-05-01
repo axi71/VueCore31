@@ -2,11 +2,7 @@
 
 The repository contains an ASP.&#8203;NET Core + Vue.js starter template. The template runs on ASP.NET Core 3.1 and is created by Vue CLI 4.0 with a new plugin based architecture allowing developers to interactively scaffold a new project with just a one command.
 
-Original article how to create the starter template is available [here](https://medium.com/software-ateliers/asp-net-core-vue-template-with-custom-configuration-using-cli-3-0-8288e18ae80b).
-
-[![Nuget](https://img.shields.io/nuget/v/SoftwareAteliers.CVTemplate.svg?style=flat&color=2196f3)](https://www.nuget.org/packages/SoftwareAteliers.CVTemplate/)
-
-> For ASP.NET Core 2.2 template use [release v1.1.0](https://github.com/SoftwareAteliers/asp-net-core-vue-starter/releases/tag/1.1.0)
+Original code was copied and changed from this [repository](https://github.com/SoftwareAteliers/asp-net-core-vue-starter) and the article how to create the starter template [here](https://medium.com/software-ateliers/asp-net-core-vue-template-with-custom-configuration-using-cli-3-0-8288e18ae80b).
 
 ---
 
@@ -34,14 +30,11 @@ Original article how to create the starter template is available [here](https://
 
 **Vue.js with CLI 4.0 supporting optional integrations:**
 
-* TypeScript
 * Progressive Web App
 * Vue Router & Vuex (State Store)
 * Linting, unit testing, E2E testing
-* 3rd party component frameworks (Vuetify, Vue Bootstrap etc.)
+* 3rd party component framework Vuetify
 * publish your personal/enterprise plugin and so on...
-
-*For a full feature list, I suggest you to read the [official CLI release statement](https://medium.com/the-vue-point/vue-cli-3-0-is-here-c42bebe28fbb) by Evan You.*
 
 ## Prerequisites
 
@@ -54,28 +47,8 @@ Original article how to create the starter template is available [here](https://
 
 ## Getting started
 
-There are two ways how to set up the project: one for people who want to create their own template and choose custom integrations and the other for developers who want to start with no configuration.
-
-## Clone the starter with default configuration
-
-* Clone this repository `git clone https://github.com/SoftwareAteliers/asp-net-core-vue-starter`
-
-or you can use .NET Core CLI templates:
-
-* Install the template from NuGet repository: `dotnet new -i SoftwareAteliers.CVTemplate`
-
-* Initialize the project: `dotnet new vue -o MyProject`
-
-## (Optional) Scaffold Vue.js app with custom configuration
-
-If you prefer to overwrite default Vue client app with custom settings, take the following steps:
-
-* **Remove all the contents** of the folder /ClientApp
-* Create a new Vue project by using Vue CLI: `vue create client-app` OR by using CLI graphical interface running `vue ui`
-
-> Unfortunately Vue CLI does not allow us to set a project name by C# standards using Upper Camel Case (Pascal Case) naming convention, so let's initiate app inside of client-app folder and then move the content to ClientApp.
-
-* **Move all the contents from the new folder /client-app to /ClientApp.**
+* Clone this repository `git clone https://github.com/axi71/VueCore31`
+* run npm install in the clientApp folder
 
 Now application is ready to run.
 
@@ -89,23 +62,14 @@ You have three choices when it comes to how you prefer to run the app. You can e
 
 ### 2. Using the built-in run command
 
-* Run the application in VSCode or Visual Studio 2017 by hitting `F5`
+* Run the application in VSCode or Visual Studio 2019 by hitting `F5` or `Strg+F5`
 
 > It will take some time during the first run to download all client side dependencies.
-
-### 3. Using docker
-
-* Run the following command in a cmd window to build the docker image:
-`docker build -t <IMAGE_NAME> .`
-
-* Run the application in a cmd window by this command:
-`docker run -d -p 5000:80 <IMAGE_NAME>`
 
 ## View your application running
 
 Browse to [http://localhost:5000](http://localhost:5000) for ASP.&#8203;NET Core + Vue app or browse to [http://localhost:8080](http://localhost:8080) for Vue app only.
 
-![Application screenshot](./screenshot.png)
 
 ## Recommended plugin for debugging Vue
 
@@ -119,24 +83,13 @@ Want to file a bug, contribute some code, or improve documentation? Excellent! P
 
 ---
 
-## Contributors
-
-Special thanks to everyone who helped and contributed to this project!
-
-* [@jdebarochez](https://github.com/jdebarochez)
-* [@arisliang](https://github.com/arisliang)
-* [@dotnetshadow](https://github.com/dotnetshadow)
-* [@NickStees](https://github.com/NickStees)
-* [@wallyjue](https://github.com/wallyjue)
-
----
 
 ## License
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://mit-license.org/)
 
-Copyright &copy; 2018 - 2020 [Software Ateliers](https://github.com/SoftwareAteliers)
+Copyright &copy; 2020 [©a-x-i](https://github.com/axi71)
 
 ## Where to find me
 
-Medium: [Software Ateliers](https://medium.com/software-ateliers) | Twitter: [@SAteliers](https://twitter.com/SAteliers)
+HP: [my life](http://axi.at) 
