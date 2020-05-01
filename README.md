@@ -54,7 +54,7 @@ Now application is ready to run.
 
 ## Run the application
 
-You have three choices when it comes to how you prefer to run the app. You can either use the command line or the build-in run command.
+You have two choices when it comes to how you prefer to run the app. You can either use the command line or the build-in run command.
 
 ### 1. Using the command line
 
